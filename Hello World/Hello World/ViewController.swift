@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    //@IBOutlet var labeltest :UILabel!
-    //@IBOutlet var buttonTest :UIButton!
     
     @IBOutlet weak var labeltest: UILabel!
     @IBOutlet weak var buttontest: UIButton!
@@ -24,8 +21,10 @@ class ViewController: UIViewController {
         print("Hello World!")
 
         labeltest.text = "Swift Test"
+        //labeltest.adjustsFontSizeToFitWidth = true
+        //labeltest.center = self.view.center
         
-        buttontest.setTitle("Button", for:UIControlState.normal)
+        buttontest.setTitle("ボタン", for:UIControlState.normal)
         
     }
 
