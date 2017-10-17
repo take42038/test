@@ -13,14 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var labeltest: UILabel!
     @IBOutlet weak var buttontest: UIButton!
     
-    var count = 0
-
+    //var count = 0
+    var count = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Hello World!")
 
-        labeltest.text = "Swift Test"
+        labeltest.text = "Label Test"
         //labeltest.adjustsFontSizeToFitWidth = true
         //labeltest.center = self.view.center
         
@@ -29,12 +30,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
-        count += 1
-        if(count%2 == 0){
+        //count += 1
+        //if(count%2 == 0){
+        if(count == true){
             labeltest.text = ("Swift Test")
+            count = false
         }
         else{
             labeltest.text = ("tapped !")
+            count = true
         }
     }
     
